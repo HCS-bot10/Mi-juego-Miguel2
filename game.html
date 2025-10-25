@@ -63,6 +63,7 @@ function draw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "#fff";
   ctx.fillRect(player.x, player.y, player.w, player.h);
+
   ctx.fillStyle = "#4caf50";
   platforms.forEach(p => ctx.fillRect(p.x, p.y, p.w, p.h));
 
@@ -73,6 +74,7 @@ function draw() {
     ctx.fill();
   }
 
+  ctx.font = "20px Arial";
   ctx.fillStyle = "#ccc";
   ctx.fillText("Nivel 1 - ¡Encuentra el corazón! ❤️", 20, 30);
 }
@@ -84,9 +86,4 @@ function loop() {
 }
 
 document.addEventListener('keydown', e => keys[e.key] = true);
-document.addEventListener('keyup', e => keys[e.key] = false);
-
-loop();
-</script>
-</body>
-</html>
+document.addEventListener('keyup', e => keys[e
