@@ -20,7 +20,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-button {
+a.btn, button {
   background: #ff4081;
   border: none;
   color: white;
@@ -28,16 +28,18 @@ button {
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s;
 }
 
-button:hover {
+a.btn:hover, button:hover {
   background: #e91e63;
 }
 
 canvas {
   display: block;
-  margin: 0 auto;
+  margin: 40px auto;
   background: linear-gradient(to top, #222, #555);
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
